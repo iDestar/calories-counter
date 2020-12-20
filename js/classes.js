@@ -47,7 +47,7 @@ export default class Counter {
     this._onFormReset = this._onFormReset.bind(this);
     this._onFormSubmit = this._onFormSubmit.bind(this);
   }
-  _init() {
+  init() {
     this.form.addEventListener('input', this._onFormInput);
     this.form.addEventListener('submit', this._onFormSubmit);
     this.form.addEventListener('reset', this._onFormReset);
